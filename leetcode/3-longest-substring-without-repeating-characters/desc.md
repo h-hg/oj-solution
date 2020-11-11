@@ -1,30 +1,42 @@
-Given a string, find the length of the **longest substring** without repeating characters.
+<p>Given a string <code>s</code>, find the length of the <b>longest substring</b> without repeating characters.</p>
 
-**Example 1:**
+<p>&nbsp;</p>
+<p><strong>Example 1:</strong></p>
 
-```
-Input: "abcabcbb"
-Output: 3 
-Explanation: The answer is "abc", with the length of 3. 
-```
+<pre>
+<strong>Input:</strong> s = &quot;abcabcbb&quot;
+<strong>Output:</strong> 3
+<strong>Explanation:</strong> The answer is &quot;abc&quot;, with the length of 3.
+</pre>
 
-**Example 2:**
+<p><strong>Example 2:</strong></p>
 
-```
-Input: "bbbbb"
-Output: 1
-Explanation: The answer is "b", with the length of 1.
-```
+<pre>
+<strong>Input:</strong> s = &quot;bbbbb&quot;
+<strong>Output:</strong> 1
+<strong>Explanation:</strong> The answer is &quot;b&quot;, with the length of 1.
+</pre>
 
-**Example 3:**
+<p><strong>Example 3:</strong></p>
 
-```
-Input: "pwwkew"
-Output: 3
-Explanation: The answer is "wke", with the length of 3. 
-             Note that the answer must be a substring, "pwke" is a subsequence and not a substring.
-```
+<pre>
+<strong>Input:</strong> s = &quot;pwwkew&quot;
+<strong>Output:</strong> 3
+<strong>Explanation:</strong> The answer is &quot;wke&quot;, with the length of 3.
+Notice that the answer must be a substring, &quot;pwke&quot; is a subsequence and not a substring.
+</pre>
 
-**Constraints:**
-- `0 <= s.length <= 5 * 10e4`
-- `s` consists of English letters, digits, symbols and spaces.
+<p><strong>Example 4:</strong></p>
+
+<pre>
+<strong>Input:</strong> s = &quot;&quot;
+<strong>Output:</strong> 0
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>0 &lt;= s.length &lt;= 5 * 10<sup>4</sup></code></li>
+	<li><code>s</code> consists of English letters, digits, symbols and spaces.</li>
+</ul>
