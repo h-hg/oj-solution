@@ -6,8 +6,7 @@
   <title>Document</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
-  <meta name="viewport"
-    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <!-- theme -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
   <!-- docsify-themeable: Simple -->
@@ -16,6 +15,9 @@
   <!-- <link rel="stylesheet" href="https://unpkg.com/docsify-toc@1.0.0/dist/toc.css"> -->
   <!-- docsify-katex -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />
+  <!-- docsify-sidebar-collapse -->
+  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar-folder.min.css" /> -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css" />
 </head>
 
 <body>
@@ -24,12 +26,15 @@
     window.$docsify = {
       name: "Online Judge Solution",
       nameLink: {
-        "/": "/",
+        "/": "/oj-solution",
       },
+      // repo: "https://github.com/h-hg/oj-solution",
       auto2top: true,
       // relativePath: true,
+      homepage: "README.md",
       // sidebar
       loadSidebar: "SUMMARY.md",
+      // hideSidebar: false,
       //maxLevel: 4,
       subMaxLevel: 6,
       //search
@@ -54,7 +59,7 @@
       // docsify-copy-code
       copyCode: {
         buttonText: {
-          "/": "Copy to clipboard"
+          "/": "Copy"
         },
         errorText: {
           "/": "Error"
@@ -110,7 +115,11 @@
   <!-- <script src="//unpkg.com/docsify-pdf-embed-plugin/src/docsify-pdf-embed.js"></script> -->
   <!-- PDFObject.js is a required dependency of this plugin -->
   <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/pdfobject/2.1.1/pdfobject.min.js"></script> -->
-  
+
+  <!-- docsify-sidebar-collapse -->
+  <!-- url: https://github.com/iPeng6/docsify-sidebar-collapse -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+
   <!-- Offline Mode: Progressive Web Apps (PWA) -->
   <!-- url: https://docsify.js.org/#/pwa -->
   <script>
