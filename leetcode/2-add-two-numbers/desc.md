@@ -4,7 +4,7 @@
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
-<img src="./addtwonumber1.jpg" >
+<img src="https://assets.leetcode.com/uploads/2020/10/02/addtwonumber1.jpg" >
 
 <pre>
 <strong>Input:</strong> l1 = [2,4,3], l2 = [5,6,4]

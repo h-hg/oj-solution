@@ -4,3 +4,6 @@
     - [2. Add Two Number](leetcode/2-add-two-numbers/index.md)
     - [3. Longest Substring Without Repeating Characters](leetcode/3-longest-substring-without-repeating-characters/index.md)
     - [4. Median of Two Sorted Arrays](leetcode/4-median-of-two-sorted-arrays/index.md)
+    - [5. Longest Palindromic Substring](leetcode/5-longest-palindromic-substring/index.md)
+    - [6. ZigZag Conversion](leetcode/6-zigzag-conversion/index.md)
+- 剑指 Offer
