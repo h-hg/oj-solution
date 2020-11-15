@@ -3,13 +3,14 @@
 #include <algorithm>
 using namespace std;
 
-class DFA {
+class Solution {
   // states
   enum {
-    START = 0,
-    SIGNED = 1,
-    NUMBER = 2,
-    END = 3
+    START = 0, SIGNED, NUMBER, END
+  };
+  // input type
+  enum {
+    SPACE = 0, SIGN, DIGIST, OTHER
   };
   vector<vector<int>> table = {
     {START, SIGNED, NUMBER, END}, // for START 
@@ -17,24 +18,20 @@ class DFA {
     {END, END, NUMBER, END},      // for NUMBER
     {END, END, END, END}          // for END
   };
-  int getCol(char c) {
+  int getInputType(char c) {
     if(c == ' ')
-      return 0;
+      return SPACE;
     else if(c == '+' || c == '-')
-      return 1;
+      return SIGN;
     else if('0' <= c && c <= '9')
-      return 2;
+      return DIGIST;
     else
-      return 3;
+      return OTHER;
   }
 
-  int state = START;
-  int sign = 1;
-  long long ans = 0;
-public:
-  void getNext(char c) {
+  int updateState(char c) {
     // get the next state
-    state = table[state][getCol(c)];
+    state = table[state][getInputType(c)];
     // action of state transition
     if(state == NUMBER) {
       ans = ans * 10 + c - '0';
@@ -42,19 +39,17 @@ public:
     } else if(state == SIGNED) {
       sign = c == '+' ? 1 : -1;
     }
+    return state;
   }
-  // get the output of DFA
-  int getOut() {
-    return sign * ans;
-  }
-};
-
-class Solution {
+  
+  int state = START;
+  int sign = 1;
+  long long ans = 0;
 public:
   int myAtoi(string &s) {
-    DFA dfa;
     for(auto &c : s)
-      dfa.getNext(c);
-    return dfa.getOut();
+      if(updateState(c) == END)
+        return sign * ans;
+    return sign * ans;
   }
 };

@@ -6,4 +6,10 @@
     - [4. Median of Two Sorted Arrays](leetcode/4-median-of-two-sorted-arrays/index.md)
     - [5. Longest Palindromic Substring](leetcode/5-longest-palindromic-substring/index.md)
     - [6. ZigZag Conversion](leetcode/6-zigzag-conversion/index.md)
+    - [7. Reverse Integer](leetcode/7-reverse-integer/index.md)
+    - [8. String to Integer (atoi)](leetcode/8-string-to-integer-atoi/index.md)
+    - [9. Palindrome Number](leetcode/9-palindrome-number/index.md)
+    - [10. Regular Expression Matching](leetcode/10-regular-expression-matching/index.md)
+    - [65. Valid Number](leetcode/65-valid-number/index.md)
+    - [393. UTF-8 Validation](leetcode/393-utf-8-validation/index.md)
 - 剑指 Offer
