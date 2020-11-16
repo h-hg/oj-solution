@@ -6,4 +6,6 @@
 
 ## Solution
 
-[](solution.cpp ':include :type=code cpp')
+### DFA
+
+[](dfa.cpp ':include :type=code cpp')

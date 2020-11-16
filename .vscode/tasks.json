@@ -1,0 +1,108 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558 
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "shell",
+      "label": "g++ build",
+      "command": "g++",
+      "args": [
+        "-g",
+        "\"${file}\"",
+        "-o",
+        "\"${fileDirname}/${fileBasenameNoExtension}.exe\"",
+        "-Wall",
+        "-Wextra"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": "build"
+    },
+    {
+      "type": "shell",
+      "label": "gcc build",
+      "command": "gcc",
+      "args": [
+        "-g",
+        "\"${file}\"",
+        "-o",
+        "\"${fileDirname}/${fileBasenameNoExtension}.exe\"",
+        "-Wall",
+        "-Wextra"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": "build"
+    },
+    {
+      "type": "shell",
+      "label": "clang++ build",
+      "command": "clang++",
+      "windows": {
+        "args": [
+          "--target=x86_64-w64-mingw32",
+          "-g",
+          "\"${file}\"",
+          "-o",
+          "\"${fileDirname}/${fileBasenameNoExtension}.exe\"",
+          "-Wall",
+          "-Wextra"
+        ]
+      },
+      "args": [
+        "-g",
+        "\"${file}\"",
+        "-o",
+        "\"${fileDirname}/${fileBasenameNoExtension}.exe\"",
+        "-Wall",
+        "-Wextra"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": "build"
+    },
+    {
+      // something wrong with git-bash in windows
+      "type": "shell",
+      "label": "run",
+      "command": "\"${fileDirname}/${fileBasenameNoExtension}.exe\""
+    },
+    {
+      "type": "shell",
+      "label": "make",
+      "windows": {
+        "command": "mingw32-make"
+      },
+      "linux": {
+        "command": "make"
+      },
+      "group": "build"
+    },
+    {
+      "type": "shell",
+      "label": "make clean",
+      "windows": {
+        "command": "mingw32-make"
+      },
+      "linux": {
+        "command": "make"
+      },
+      "args": [
+        "clean"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "workbench.colorTheme": "Monokai",
+  "workbench.iconTheme": "vscode-icons",
+  "editor.cursorStyle": "block",
+  "editor.fontFamily": "'Cascadia Code', Consolas, 'Courier New', monospace",
+  "editor.fontSize": 16,
+  "editor.fontLigatures": true,
+  //"terminal.integrated.shell.linux": "/bin/bash",
+  //"terminal.integrated.shell.windows": "C:\\ProgramData\\scoop\\apps\\git\\current\\bin\\bash.exe",
+  "terminal.integrated.copyOnSelection": true,
+  "editor.renderControlCharacters": true,
+  "editor.renderWhitespace": "all",
+  "editor.renderIndentGuides": true,
+  "editor.renderLineHighlight": "all",
+  "files.eol": "\n",
+  "editor.tabSize": 2,
+  "editor.detectIndentation": true,
+  "editor.insertSpaces": true,
+  "files.encoding": "utf8",
+  "files.autoGuessEncoding": true,
+  "[python]": {
+    "editor.tabSize": 4
+  },
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": false,
+    "editor.tabSize": 4
+  },
+  "files.autoSave": "onWindowChange",
+  "vsicons.dontShowNewVersionMessage": true,
+  "update.mode": "manual",
+  "update.enableWindowsBackgroundUpdates": false,
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/dist": true
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true
+  },
+  //plugin
+  "markdown-preview-enhanced.liveUpdate": false,
+}
