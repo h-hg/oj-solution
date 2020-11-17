@@ -10,5 +10,6 @@
 |8|String to Integer (atoi)|Medium|`Math`, `String`|:o:|
 |9|Palindrome Number|Easy|`Math`|:o:|
 |10|Regular Expression Matching|Hard|`String`, `Dynamic Programming`, `Backtracking`|:o:|
+|12|Integer to Roman|Medium|`Math`, `String`|:o:|
 |65|Valid Number|Hard|`Math`, `String`|:o:|
 |393|UTF-8 Validation|Medium|`Bit Manipulation`|:o:|

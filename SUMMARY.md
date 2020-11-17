@@ -10,6 +10,7 @@
     - [8. String to Integer (atoi)](leetcode/8-string-to-integer-atoi/index.md)
     - [9. Palindrome Number](leetcode/9-palindrome-number/index.md)
     - [10. Regular Expression Matching](leetcode/10-regular-expression-matching/index.md)
+    - [12. Integer to Roman](leetcode/12-integer-to-roman/index.md)
     - [65. Valid Number](leetcode/65-valid-number/index.md)
     - [393. UTF-8 Validation](leetcode/393-utf-8-validation/index.md)
 - 剑指 Offer
